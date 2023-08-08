@@ -31,3 +31,5 @@
 * Validate on multiple Android versions (currently only manually tested against Android 11 + 13)
 * Review features of other applications (like <https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor>) to see if other features would be good to port to mobile?
 * See if there's any demand to build this out to a Desktop app for Windows/Mac/Browser from Flutter too?
+* Add support for deleting images (with confirmation for safety)
+* * Add basic edit support, specifically crop!
