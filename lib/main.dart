@@ -176,7 +176,7 @@ class ImageAnnotationAppState extends State<ImageAnnotationApp> {
               onPressed: () {
                 getImagesFromDirectory();
               },
-              child: const Text("Retry"),
+              child: const Text("Select Directory"),
             ),
           ],
         ),
@@ -209,6 +209,7 @@ class ImageAnnotationAppState extends State<ImageAnnotationApp> {
             children: [
               ElevatedButton(
                 onPressed: () {
+                  saveTextToFile(textController.text, imageFiles[currentImageIndex].path);
                   showPreviousImage();
                 },
                 child: const Text("Previous"),
@@ -216,6 +217,7 @@ class ImageAnnotationAppState extends State<ImageAnnotationApp> {
               const SizedBox(width: 10),
               ElevatedButton(
                 onPressed: () {
+                  saveTextToFile(textController.text, imageFiles[currentImageIndex].path);
                   goBackToFilePicker();
                 },
                 child: const Text("Home"),
